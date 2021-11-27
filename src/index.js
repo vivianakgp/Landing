@@ -20,7 +20,7 @@ function showAndHideMenu() {
   lastScrollTop = st;
 }
 // events //
-window.addEventListener('scroll', showAndHideMenu);
+window.addEventListener('scroll', showAndHideMenu);// se iza but eslint does not allow
 ICON_OPEN_MENU.addEventListener('click', () => { CONTAINER_MENU.style.right = '0'; });
 ICON_CLOSE_MENU.addEventListener('click', () => { CONTAINER_MENU.style.right = '-100%'; });
 // // // // /// /// ///

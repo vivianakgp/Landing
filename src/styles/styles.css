@@ -5,20 +5,23 @@
 
 #menu {
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   width: 100vw;
+  min-width: 320px;
+  max-width: 1400px;
   height: 60px;
-  padding: 0 20px;
-  transition: all 0.8s linear;
+  padding: 0 1rem;
+  transition: all 0.5s linear;
   background-color: rgba(0, 0, 0, 0.705);
 }
 
 #menu div.menu__logo {
-  width: 118px;
+  width: 120px;
   margin-left: 7px;
+  background-color: #535252;
 }
-
 #menu div.menu__logo img {
   width: 100%;
   height: auto;
@@ -27,23 +30,51 @@
 #menu div.menu__icon {
   width: 50px;
 }
-
-#menu div.menu__icon > i {
-  color: rgba(255, 255, 255, 0.678);
+#menu div.menu__icon i#iconOpenMenu {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 #menu div#menu__container {
-  background-color: burlywood;
   position: absolute;
-  right: -100vw;
+  right: -100%;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
   height: 100vh;
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
   transition: all 0.3s linear;
+  background-color: #202723;
+}
+#menu div#menu__container i#iconCloseMenu {
+  color: rgba(255, 255, 255, 0.9);
+  align-self: flex-end;
 }
 
 #menu div#menu__container > ul {
   list-style-type: none;
+  margin: 3.5rem 0;
+  cursor: pointer;
+}
+#menu div#menu__container > ul li {
+  margin: 15px 0;
+}
+#menu div#menu__container > ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#menu div#menu__container > div.socialNetwork {
+  color: rgba(255, 255, 255, 0.9);
+  padding: 20px 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+}
+#menu div#menu__container > div.socialNetwork i {
+  margin: 0.5rem;
 }
 
 .menuScrollUp {
@@ -51,6 +82,37 @@
   background-color: rgba(0, 0, 0, 0.705);
 }
 
+@media only screen and (min-width: 1024px) {
+  #menu div.menu__icon {
+    display: none;
+  }
+
+  #menu div#menu__container {
+    left: 0;
+    position: initial;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    background-color: transparent;
+  }
+  #menu div#menu__container i#iconCloseMenu {
+    display: none;
+  }
+
+  #menu div#menu__container > ul {
+    margin: 0 1rem;
+  }
+  #menu div#menu__container > ul li {
+    margin: 0 5px;
+    display: inline;
+  }
+
+  #menu div#menu__container > div.socialNetwork {
+    margin: 0;
+    padding: 0;
+    border-top: none;
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -58,21 +120,12 @@
 }
 
 body {
-  background-image: url("https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/spa-logo-design.jpg");
-  background-repeat: no-repeat;
+  font-family: Raleway, sans-serif;
+  background-image: url("../assets/image/blue-snow.png");
+  background-size: cover;
   background-attachment: fixed;
-}
-
-.banner {
-  padding-top: 100px;
-  height: 100vh;
-  background-color: #444247;
-  background-image: url("../assets/image/240849687_100983788980471_8425317334463107899_n.png");
-}
-
-.ejdiv {
-  height: 800px;
-  background-color: mediumpurple;
+  background-position: center center;
+  padding-top: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,20 +5,11 @@
     margin: 0;
 }
 body{
-    background-image:url('https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/spa-logo-design.jpg');
-    background-repeat: no-repeat;
+    font-family: Raleway, sans-serif;
+    background-image:url('../assets/image/blue-snow.png');
+    //background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-
-}
-
-.banner{
-    padding-top:100px ;
-    height: 100vh;
-    background-color: rgb(68, 66, 71);
-    background-image: url('../assets/image/240849687_100983788980471_8425317334463107899_n.png');
-}
-
-.ejdiv{
-    height: 800px;
-    background-color: mediumpurple;
+    background-position: center center;
+    padding-top: 200px;
 }
