@@ -121,10 +121,7 @@
 
 body {
   font-family: Raleway, sans-serif;
-  background-image: url("../assets/image/blue-snow.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
+  background-color: black;
   padding-top: 200px;
 }
 
