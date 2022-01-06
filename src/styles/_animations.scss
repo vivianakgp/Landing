@@ -1,0 +1,19 @@
+@keyframes floating{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-10px);;
+    }
+}
+// @keyframes scale{
+//     0%{
+//     transform: scale(0) translate(0%, 0%);
+
+
+//     }
+//     100%{
+//         transform: scale(0.5) translate(-60%, -740%);
+
+//     }
+// }

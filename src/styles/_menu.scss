@@ -8,6 +8,7 @@
 $letter-menu: rgba(255, 255, 255, 0.9);
 #menu{
     position:fixed;
+    z-index: 100;
     top:0;
     display:flex;
     justify-content: space-between;
@@ -24,16 +25,15 @@ $letter-menu: rgba(255, 255, 255, 0.9);
 #menu div.menu__logo{
     width:120px;
     margin-left: 7px;
-    background-color: rgb(83, 82, 82);
+    background-color: rgb(223, 213, 213);
     @extend .centerItems;
     img{
         width:100%;
-        height: auto;
     }
 }
 // // // burger icon // // // //
 #menu div.menu__icon{
-    //background-color: rgb(112, 108, 108);
+    background-color: rgb(112, 108, 108);
     width: 50px;
     @extend .centerItems;
     i#iconOpenMenu{

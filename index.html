@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav id="menu">
-            <div class="menu__logo"><img src="./src/assets/logos/LOGOTIPO-CH.png"></div>
+            <div class="menu__logo"><img src="./src/assets/logos/LOGOBLANCO.png" alt="Logo"></div>
             <div class="menu__icon"><!-- fa-lg o fa-2x--><i id="iconOpenMenu" class="fas fa-bars fa-lg"></i></div>
             <div id="menu__container">
                 <i id="iconCloseMenu" class="fas fa-times fa-lg"></i>
@@ -31,28 +31,124 @@
             </div>
         </nav>
         <section class="banner">
+            <h2>Mas de lo que esperas</h2>
+            <i class="fas fa-chevron-down"></i>
         </section>
     </header>
     <main>
-        <section id="nosotros"></section>
-        <section id="servicios"></section>
-        <section id="contacto"></section>
-        <section id="map"></section>
-        <section id="recomendaciones"></section>
+        <section class="sec" id="about">
+            <h3>Nosotros</h3>
+            <div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque exercitationem nisi odio possimus ad voluptatem id quisquam omnis?</p>
+                <img src="https://picsum.photos/id/1/200/300" alt="anantara">
+            </div>
+            <div>
+                <h4>Vision</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem sunt molestias praesentium, minima recusandae?</p>
+                <h4>Mision</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, sint.</p>
+            </div>
+            <div></div>
+        </section>
+        <section class="sec" id="services">
+            <h3>Nuestros servivios</h3>
+            <div class="card">card1</div>
+            <div class="card">card1</div>
+            <div class="card">card1</div>
+            <button>Ver todo</button>
+
+        </section>
+        <section  class="sec" id="contact">
+            <h3>Contacto</h3>
+            <button><i class="fab fa-whatsapp fa-lg"></i>Envianos Whatsapp</button>
+            <p>Contactanos por Correo</p>
+            <form id="contactForm" class="contact__form">
+                <p>
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" autocorrect="off" autocapitalize="on" required pattern=".{3}">
+                    <span class="stylesLabel" data-text="Name"></span>
+                </p>
+                <p>
+                    <label for="email">Correo</label>
+                    <input id="email" name="email" type="email" autocorrect="off" autocapitalize="off" required >
+                    <span class="stylesLabel" data-text="Email"></span>
+                </p>
+                <p>
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" autocorrect="off" autocapitalize="off" autocomplete="on" required></textarea>
+                    <span class="stylesLabel" data-text="Message"></span>
+                </p>
+                <p>
+                    <input type="Submit" value="Enviar" title="Submit">
+                </p>
+            </form>
+        </section>
+        <section id="location">
+            <h4></h4>
+            <div>mapa</div>
+
+        </section>
+        <section class="sec" id="ourCustomers">
+            <h3>Nuestros Clienes Opinan</h3>
+            <div class="carousel">
+                <button class="btnArrow prev" id="btnPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="btnArrow next" id="btnNext"><i class="fas fa-chevron-right"></i></button>
+                <div class="car__container" id="carContainer">
+                    <div class="list-container" id="listContainer">
+                        <div class="list">
+                            <p>
+                                <i class="fas fa-quote-left"></i>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, tenetur laborum!
+                                <span> -Sara Mesa</span>
+                            </p>
+                        </div>
+                        <div class="list">
+                            <p>
+                                <i class="fas fa-quote-left"></i>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ad! Facilis illo nostrum consequuntur, blanditiis saepe error magnam temporibus recusandae inventore eum.
+                                <span> -Andrea Rivas</span>
+                            </p>
+                        </div>
+                        <div class="list">
+                            <p>
+                                <i class="fas fa-quote-left"></i>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus assumenda accusantium commodi reiciendis.
+                                <span> -Fabiola Rojo</span>
+                            </p>
+                        </div>
+                        <div class="list">
+                            <p>
+                                <i class="fas fa-quote-left"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque voluptatibus soluta maiores obcaecati autem?
+                                <span> -Fernanda Garcia</span>
+                            </p>
+                        </div>
+                        <div class="list">
+                            <p>
+                                <i class="fas fa-quote-left"></i>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque voluptatibus soluta maiores obcaecati autem?
+                                <span> -Magaly Gomez</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="sec">
         <div class="logo"><img src="./src/assets/logos/LOGOBLANCO.png"></div>
-        <div class="contacto">
+        <div class="contact">
+            <p>Siguenos en nuestras redes sociales:</p>
             <i class="fab fa-facebook fa-lg"></i>
-            <i class="fab fa-facebook-f fa-lg"></i>
+            <!-- <i class="fab fa-facebook-f fa-lg"></i> -->
             <i class="fab fa-instagram fa-lg"></i>
             <i class="fab fa-whatsapp fa-lg"></i>
             <p>Av.Lapislázuli #2529 Local 6 #44580 Guadalajara, Jalisco.</p>
             <p>Lunes-Viernes: 9am - 6pm <span>Sabados: 9am - 3pm</span></p>
             <p>Tel: 33 2615 4992</p>
-            <p>correo: anantara.bodyspa@gmail.com</p>
+            <p>anantara.bodyspa@gmail.com</p>
         </div>
-        <span>Anantara Body Spa. @Todos los derechos reservados, 2022</span>
+        <span>Anantara Body Spa. @Todos los derechos reservados. 2022</span>
     </footer>
     <script type="module" src="./src/index.js"></script>
 </body>

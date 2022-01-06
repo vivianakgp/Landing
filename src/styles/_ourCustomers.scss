@@ -1,0 +1,116 @@
+#ourCustomers{
+    padding-bottom: 60px;
+
+    .carousel{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;//100 mas grande
+        // margin: 0 60px;no
+        // padding-top: 10px;
+        // background-color: rgb(26, 24, 24);
+        .btnArrow{
+            position: absolute;
+            z-index: 100;
+            width: 45px;
+            height: 55px;
+            // border-radius: 30px;
+            border: 0;
+            font-size: 2rem;
+            cursor: pointer;
+            // background-color: blue;
+            color: rgba(102, 133, 92, 0.653);
+            background: transparent;
+        }
+        .prev{
+            left: -15px;
+        }
+        .next{
+            right: -15px;
+        }
+        .car__container{
+            // background-color: purple;
+            position: relative;//no se para que este, para los btns
+            display: flex;
+            align-items: center;
+            // width: fit-content;// la caga en el cell
+            //margin: 0 auto;// revisar si es necesario
+            overflow: hidden;
+            //colocar un max-width 90vw
+            // height: 300px;
+            // padding: 100px 0; no se para que
+            .list-container{
+                position: relative;
+                top: 0px;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                // border: 1px solid rgb(12, 11, 11);
+                transition: .5s ease-in-out;
+                .list{
+                    // min-width: 320px;
+                    width: 85vw;
+                    // box-sizing: border-box;
+                    float: left;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 13px;
+                    justify-content: center;
+                    font-weight: 500;
+                    line-height: 1.8;
+                    text-align: center;
+                    //border-right: 2px solid black;
+                    //border-left: 2px solid rgb(219, 34, 34);
+                    // height: 500px;
+                    // background-color: yellow;
+
+                    p{
+                        // height: 100%;
+                        // background-color: rgb(230, 190, 225);
+                        // padding: 20px 30px;
+                        // background-color: whitesmoke;
+                        i{
+                            font-size: 2rem;
+                            display: block;
+                            margin-bottom: 15px;
+                        }
+                        span{
+                            display: block;
+                            // background-color: burlywood;
+                            // text-align: end;mas grande
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// @media screen and(min-width:380px){
+//     #ourCustomers{
+//         .carousel{
+//             .car__container{
+//                 .list-container{
+//                     .list{
+//                         width: 90vw;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media screen and(min-width:700px){
+//     #ourCustomers{
+//         .carousel{
+//             .car__container{
+//                 .list-container{
+//                     .list{
+//                         width: 93vw;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//}

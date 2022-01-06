@@ -1,14 +1,89 @@
-@import './menu.scss';
+@use 'menu';
+@use 'animations';
+@use 'about';
+@use 'services';
+@use 'contact';
+@use 'location';
+@use 'ourCustomers';
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: Raleway, sans-serif;
-    background-color: black;
-    // background-size: cover;
-    // background-attachment: fixed;
-    // background-position: center center;
-    padding-top: 200px;
+    font-size: 1.3rem;// size for whole document
+    min-width: 320px;
+    background-color: rgb(252, 250, 250);
+    background-image: url('https://static.wixstatic.com/media/1a5b34_d65ccec864514993a1b755ec1c208cc2~mv2.png/v1/fill/w_1508,h_1457,al_t,q_95,usm_0.66_1.00_0.01/1a5b34_d65ccec864514993a1b755ec1c208cc2~mv2.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
+.sec{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
+    line-height: 1.6;
+
+}
+h3{
+    margin-bottom: 15px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    background-color: white;
+
+    .logo{
+        width: 80%;
+        background-color: rgb(63, 15, 63);
+        img{
+            width: 100%;
+        }
+    }
+    .contact{
+        background-color: violet;
+        text-align: center;
+        margin: 15px 0;
+        padding: 17px 0;
+        i{
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+            margin-right: 10px;
+        }
+        p{
+            margin-top: 8px ;
+        }
+    }
+    >span{
+        font-size: 1rem;
+    }
+}
+section.banner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    background-color: white;
+    padding-bottom: 2rem;
+    background-image: url('https://images.pexels.com/photos/6628486/pexels-photo-6628486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-position: center center;
+    background-size: cover;
+h2{
+    background-color: violet;
+    text-align: center;
+    margin-bottom:6rem ;
+}
+i{
+  font-size: 2rem;
+  animation: floating 1s alternate infinite;
+
+}
+
+}
+
