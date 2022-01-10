@@ -1,4 +1,13 @@
 #location{
-    background-color: pink;
-    height: 120px;
+    background-color: rgb(243, 242, 242);
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    h3{
+        text-align: center;
+        margin: 20px 0;
+    }
+    .map iframe{
+        width: 100%;
+    }
 }

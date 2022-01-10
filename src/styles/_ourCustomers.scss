@@ -1,86 +1,85 @@
 #ourCustomers{
+    padding-top: 80px;
     padding-bottom: 60px;
-
+    h3{
+        margin-bottom: 20px;
+    }
     .carousel{
         position: relative;
-        width: 100%;
-        overflow: hidden;
         display: flex;
         align-items: center;
-        margin-top: 50px;//100 mas grande
+        width: 100%;
+        overflow: hidden;
+        //test
+        //margin-top: 50px;//100 mas grande
         // margin: 0 60px;no
         // padding-top: 10px;
-        // background-color: rgb(26, 24, 24);
+        //background-color: rgba(26, 24, 24, 0.365);
         .btnArrow{
             position: absolute;
             z-index: 100;
             width: 45px;
             height: 55px;
-            // border-radius: 30px;
             border: 0;
             font-size: 2rem;
-            cursor: pointer;
-            // background-color: blue;
             color: rgba(102, 133, 92, 0.653);
-            background: transparent;
+            cursor: pointer;
+            //test
+            // border-radius: 30px;
+            //background: rgba(0, 0, 0, 0.475);
         }
-        .prev{
+        .prev{ //btn row
             left: -15px;
         }
-        .next{
+        .next{ //btn-row
             right: -15px;
         }
         .car__container{
-            // background-color: purple;
             position: relative;//no se para que este, para los btns
             display: flex;
             align-items: center;
+            overflow: hidden;
+            margin: 0 20px;
+            //test
             // width: fit-content;// la caga en el cell
             //margin: 0 auto;// revisar si es necesario
-            overflow: hidden;
             //colocar un max-width 90vw
+            //border: 3px solid blue;
             // height: 300px;
-            // padding: 100px 0; no se para que
             .list-container{
                 position: relative;
-                top: 0px;
+                top: 0;
                 left: 0;
-                display: flex;
-                justify-content: center;
-                // border: 1px solid rgb(12, 11, 11);
                 transition: .5s ease-in-out;
+                display: flex;
+                //test
+                // justify-content: center;
+                //border: 5px solid rgb(235, 44, 44);
                 .list{
-                    // min-width: 320px;
-                    width: 85vw;
-                    // box-sizing: border-box;
-                    float: left;
                     display: flex;
                     flex-direction: column;
-                    padding: 0 13px;
                     justify-content: center;
+                    text-align: center;
                     font-weight: 500;
                     line-height: 1.8;
-                    text-align: center;
-                    //border-right: 2px solid black;
-                    //border-left: 2px solid rgb(219, 34, 34);
+                    //test
+                    width: 77vw;
+                    padding:0 20px;
+                    // float: left;
+                    // min-width: 220px;
+                    // border-left: 1.5px solid black;
+                    // border-right: 1px solid greenyellow;
+                    // background-color: rgba(220, 20, 60, 0.55);
                     // height: 500px;
-                    // background-color: yellow;
-
                     p{
-                        // height: 100%;
-                        // background-color: rgb(230, 190, 225);
-                        // padding: 20px 30px;
-                        // background-color: whitesmoke;
                         i{
                             font-size: 2rem;
                             display: block;
                             margin-bottom: 15px;
+                            text-align: start;
                         }
                         span{
                             display: block;
-                            // background-color: burlywood;
-                            // text-align: end;mas grande
-
                         }
                     }
                 }
@@ -88,19 +87,30 @@
         }
     }
 }
-// @media screen and(min-width:380px){
-//     #ourCustomers{
-//         .carousel{
-//             .car__container{
-//                 .list-container{
-//                     .list{
-//                         width: 90vw;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+@media screen and(min-width:400px){
+    #ourCustomers{
+        .carousel{
+            .btnArrow{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: rgba(128, 123, 123, 0.858);
+            }
+            .prev{ //btn row
+                left: 0;
+            }
+            .next{ //btn-row
+                right: 0;
+            }
+            // .car__container{
+            //     .list-container{
+            //         .list{
+            //         }
+            //     }
+            // }
+        }
+    }
+}
 // @media screen and(min-width:700px){
 //     #ourCustomers{
 //         .carousel{
@@ -114,3 +124,40 @@
 //         }
 //     }
 //}
+
+@media screen and(min-width:1024px){
+    #ourCustomers{
+        padding-bottom: 100px;
+        h3{
+            margin-bottom: 70px;
+        }
+        .carousel{
+
+            .btnArrow{
+
+
+            }
+            .prev{ //btn row
+
+            }
+            .next{ //btn-row
+            }
+            .car__container{
+
+                .list-container{
+
+                    .list{
+                        width: 40vw;
+                        p{
+                            i{
+                            }
+                            span{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

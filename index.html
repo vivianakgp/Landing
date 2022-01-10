@@ -38,59 +38,100 @@
     <main>
         <section class="sec" id="about">
             <h3>Nosotros</h3>
-            <div>
+            <div class="container">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque exercitationem nisi odio possimus ad voluptatem id quisquam omnis?</p>
-                <img src="https://picsum.photos/id/1/200/300" alt="anantara">
-            </div>
-            <div>
                 <h4>Vision</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatem sunt molestias praesentium, minima recusandae?</p>
                 <h4>Mision</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, sint.</p>
             </div>
-            <div></div>
         </section>
         <section class="sec" id="services">
             <h3>Nuestros servivios</h3>
-            <div class="card">card1</div>
-            <div class="card">card1</div>
-            <div class="card">card1</div>
-            <button>Ver todo</button>
-
+            <div class="container">
+                <div class="card left">
+                    <div class="card__img">
+                        <!-- https://picsum.photos/536/354 -->
+                        <img src="./src/assets/image/micropuntura.jpeg" alt="">
+                    </div>
+                    <div class="card__description">
+                        <h4>Micropuntura de estrias</h4>
+                        <p>
+                            Tratamiento 100% regenerante de tejido, ayuda a construir las celulas de las capas
+                            superficiales de la piel mediante estimulacion mecanica la cual reactiva  celulas
+                            colageno y elastina que ya se habian dejado de producir.
+                        </p>
+                        <ul>
+                            <li>-Regeneracion celular</li>
+                            <li>-Resultados del 60% al 90%</li>
+                        </ul>
+                        <button>Agendar cita</button>
+                    </div>
+                </div>
+                <div class="card right">
+                    <div class="card__img">
+                        <img src="./src/assets/image/lipomaxSculp.jpg" alt="">
+                    </div>
+                    <div class="card__description">
+                        <h4>Lipomax Sculp</h4>
+                        <p>
+                            Desarrolla musculos y quema grasa al mismo tiempo.
+                            Con nuestros aparatos de ultima tecnologia que generan
+                            energia electromagnetica localizada, tonifica y define los musculos
+                            mientras los depositos de grasa se reducen.
+                        </p>
+                        <ul>
+                            <li>-Aumento de masa musculas</li>
+                            <li>-Quema grasa</li>
+                            <li>Tonifica gluteo y abdomen</li>
+                            <li>30 min equivalente a 30,000 abdominales/sentadillas</li>
+                        </ul>
+                        <button>Agendar cita</button>
+                    </div>
+                </div>
+                <button>Ver todo</button>
+            </div>
         </section>
         <section  class="sec" id="contact">
             <h3>Contacto</h3>
-            <button><i class="fab fa-whatsapp fa-lg"></i>Envianos Whatsapp</button>
-            <p>Contactanos por Correo</p>
-            <form id="contactForm" class="contact__form">
-                <p>
-                    <label for="name">Nombre</label>
-                    <input id="name" name="name" type="text" autocorrect="off" autocapitalize="on" required pattern=".{3}">
-                    <span class="stylesLabel" data-text="Name"></span>
-                </p>
-                <p>
-                    <label for="email">Correo</label>
-                    <input id="email" name="email" type="email" autocorrect="off" autocapitalize="off" required >
-                    <span class="stylesLabel" data-text="Email"></span>
-                </p>
-                <p>
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" autocorrect="off" autocapitalize="off" autocomplete="on" required></textarea>
-                    <span class="stylesLabel" data-text="Message"></span>
-                </p>
-                <p>
-                    <input type="Submit" value="Enviar" title="Submit">
-                </p>
-            </form>
+            <div class="container">
+                <button><i class="fab fa-whatsapp fa-lg"></i>Envianos Whatsapp</button>
+                <form id="contactForm" class="contact__form">
+                    <h4>Contactanos por Correo</h4>
+                    <p>
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" autocorrect="off" autocapitalize="on" required pattern=".{3}">
+                        <!-- <span class="stylesLabel" data-text="Name"></span> -->
+                    </p>
+                    <p>
+                        <label for="email">Correo</label>
+                        <input id="email" name="email" type="email" autocorrect="off" autocapitalize="off" required >
+                        <!-- <span class="stylesLabel" data-text="Email"></span> -->
+                    </p>
+                    <p>
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" autocorrect="off" autocapitalize="off" autocomplete="on" required></textarea>
+                        <!-- <span class="stylesLabel" data-text="Message"></span> -->
+                    </p>
+                    <p>
+                        <input class="form_btn" type="Submit" value="Enviar" title="Submit">
+                    </p>
+                </form>
+            </div>
         </section>
         <section id="location">
-            <h4></h4>
-            <div>mapa</div>
+            <h3>Ubicacion</h3>
+            <div class="map">
+                <!-- width="700"  -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.694011695647!2d-103.39307258548403!3d20.64132548620957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428adfb344353e7%3A0x262cdb0de400283f!2sANANTARA%20BODY%20SPA!5e0!3m2!1ses-419!2smx!4v1641656002486!5m2!1ses-419!2smx"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
 
         </section>
         <section class="sec" id="ourCustomers">
             <h3>Nuestros Clienes Opinan</h3>
-            <div class="carousel">
+            <!-- div container??  -->
+            <div class="container carousel">
                 <button class="btnArrow prev" id="btnPrev"><i class="fas fa-chevron-left"></i></button>
                 <button class="btnArrow next" id="btnNext"><i class="fas fa-chevron-right"></i></button>
                 <div class="car__container" id="carContainer">
@@ -98,36 +139,41 @@
                         <div class="list">
                             <p>
                                 <i class="fas fa-quote-left"></i>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, tenetur laborum!
-                                <span> -Sara Mesa</span>
+                                Súper recomendado, notas cambios desde la tercera sesión.
+                                Junto con la alimentación y actividad física, los resultados son increíbles.
+                                <span> -Ivette Tamayo</span>
                             </p>
                         </div>
                         <div class="list">
                             <p>
                                 <i class="fas fa-quote-left"></i>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ad! Facilis illo nostrum consequuntur, blanditiis saepe error magnam temporibus recusandae inventore eum.
-                                <span> -Andrea Rivas</span>
+                                Excelente servicio, me están haciendo micropuntura en estrías y
+                                desde la primera sesión e notado cambios, aparte que  la atención al cliente es muy buena y agradable.
+                                <span> -Natalia Fernandez</span>
                             </p>
                         </div>
                         <div class="list">
                             <p>
                                 <i class="fas fa-quote-left"></i>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus assumenda accusantium commodi reiciendis.
-                                <span> -Fabiola Rojo</span>
+                                Me encanto! exelentes servisios aparte brindan confianza y seguridad, desde el inicio
+                                te explican muy bien todo el proceso y son muy cinceros en los resultados que puedes obtener,
+                                estoy feliz con los resultados que he tenido
+                                <span> -Jesi Espinoza</span>
                             </p>
                         </div>
                         <div class="list">
                             <p>
                                 <i class="fas fa-quote-left"></i>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque voluptatibus soluta maiores obcaecati autem?
-                                <span> -Fernanda Garcia</span>
+                                Excelente servicio, es increíble cómo a partir de la tercera sesión comienzas a notar cambios
+                                <span> -Marychuy Quijada</span>
                             </p>
                         </div>
                         <div class="list">
                             <p>
                                 <i class="fas fa-quote-left"></i>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque voluptatibus soluta maiores obcaecati autem?
-                                <span> -Magaly Gomez</span>
+                                Excelente servicio, terapeutas profesionales, desde la cita de valoración te trasmiten
+                                y te dan seguridad que verás resultados a corto plazo recomiendo ampliamente, de lo mejor
+                                <span> -Letty Cisneros</span>
                             </p>
                         </div>
                     </div>
@@ -135,18 +181,20 @@
             </div>
         </section>
     </main>
-    <footer class="sec">
-        <div class="logo"><img src="./src/assets/logos/LOGOBLANCO.png"></div>
-        <div class="contact">
-            <p>Siguenos en nuestras redes sociales:</p>
-            <i class="fab fa-facebook fa-lg"></i>
-            <!-- <i class="fab fa-facebook-f fa-lg"></i> -->
-            <i class="fab fa-instagram fa-lg"></i>
-            <i class="fab fa-whatsapp fa-lg"></i>
-            <p>Av.Lapislázuli #2529 Local 6 #44580 Guadalajara, Jalisco.</p>
-            <p>Lunes-Viernes: 9am - 6pm <span>Sabados: 9am - 3pm</span></p>
-            <p>Tel: 33 2615 4992</p>
-            <p>anantara.bodyspa@gmail.com</p>
+    <footer>
+        <div class="container">
+            <div class="logo"><img src="./src/assets/logos/LOGOBLANCO.png"></div>
+            <div class="contact">
+                <p>Siguenos en nuestras redes sociales:</p>
+                <i class="fab fa-facebook fa-lg"></i>
+                <!-- <i class="fab fa-facebook-f fa-lg"></i> -->
+                <i class="fab fa-instagram fa-lg"></i>
+                <i class="fab fa-whatsapp fa-lg"></i>
+                <p>Av.Lapislázuli #2529 Local 6 #44580 Guadalajara, Jalisco.</p>
+                <p>Lunes-Viernes: 9am - 6pm <br>Sabados: 9am - 3pm</p>
+                <p>Tel: 33 2615 4992</p>
+                <p>anantara.bodyspa@gmail.com</p>
+            </div>
         </div>
         <span>Anantara Body Spa. @Todos los derechos reservados. 2022</span>
     </footer>

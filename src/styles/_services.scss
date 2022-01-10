@@ -1,9 +1,142 @@
 #services{
-    background-color: blanchedalmond;
+    background-color: white;
+    //test
+
     .card{
-        border: 1px solid palevioletred;
-        margin-bottom: 15px;
-        min-width: 200px;
-        height: 100px;
+        width: 100%;
+        max-width: 500px;
+        //test
+
+        background-color: rgb(15, 54, 22);
+        .card__img{
+            //position: relative;
+            // left: -15px;
+            // overflow: hidden;
+            // height: auto;
+            img{
+                width: 100%;
+            }
+        }
+        .card__description{
+            position: relative;
+            top: -100px;
+            // left: 30px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgba(24, 44, 32, 0.495);
+            h4{
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+            }
+            p{
+                margin-bottom: 16px;
+
+            }
+            ul{
+                list-style: none;
+                margin-bottom: 16px;
+
+            }
+            button{
+                padding: 15px;
+            }
+
+
+        }
     }
+}
+@media only screen and(min-width:500px){
+    #services{
+        .card{
+            //test
+            margin: 0 auto;
+            background-color: paleturquoise;
+            .card__img{
+
+                img{
+                }
+            }
+            .card__description{
+                h4{
+
+                }
+                p{
+                }
+                ul{
+                }
+                button{
+                }
+
+            }
+        }
+    }
+
+}
+@media only screen and(min-width:680px){
+    #services{
+        .left{
+
+        }
+        .right{
+            position: relative;
+            left: calc(100% - 500px);
+        }
+
+        .card{
+            margin:0;
+            background-color: rgba(58, 12, 37, 0.817);
+            .card__img{
+                img{
+                }
+            }
+            .card__description{
+                // max-width: 85%;
+                // top: -220px;
+                // left: 130px;
+                h4{
+
+                }
+                p{
+                }
+                ul{
+                }
+                button{
+                }
+            }
+        }
+    }
+
+}
+@media only screen and(min-width:1024px){
+    #services{
+        .card{
+            background-color: rgba(23, 109, 49, 0.817);
+
+            .card__img{
+                // max-width: 80%;
+                // left: 0px;
+                img{
+                }
+            }
+            .card__description{
+                // max-width: 80%;
+                // top: -180px;
+                // left: 130px;
+
+                h4{
+
+                }
+                p{
+
+                }
+                ul{
+
+                }
+                button{
+                }
+            }
+        }
+    }
+
 }

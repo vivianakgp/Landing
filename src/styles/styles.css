@@ -123,38 +123,154 @@
   }
 }
 #about {
-  background-color: #e77c7c;
+  background-color: #edf5f0;
 }
 
 #services {
-  background-color: blanchedalmond;
+  background-color: white;
 }
 #services .card {
-  border: 1px solid palevioletred;
-  margin-bottom: 15px;
-  min-width: 200px;
-  height: 100px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #0f3616;
+}
+#services .card .card__img img {
+  width: 100%;
+}
+#services .card .card__description {
+  position: relative;
+  top: -100px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(24, 44, 32, 0.495);
+}
+#services .card .card__description h4 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+#services .card .card__description p {
+  margin-bottom: 16px;
+}
+#services .card .card__description ul {
+  list-style: none;
+  margin-bottom: 16px;
+}
+#services .card .card__description button {
+  padding: 15px;
 }
 
+@media only screen and (min-width: 500px) {
+  #services .card {
+    margin: 0 auto;
+    background-color: paleturquoise;
+  }
+}
+@media only screen and (min-width: 680px) {
+  #services .right {
+    position: relative;
+    left: calc(100% - 500px);
+  }
+  #services .card {
+    margin: 0;
+    background-color: rgba(58, 12, 37, 0.817);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #services .card {
+    background-color: rgba(23, 109, 49, 0.817);
+  }
+}
 #contact {
   background-color: white;
 }
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .container button {
+  padding: 15px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border-style: none;
+  font-size: 1.3rem;
+  color: #075E54;
+  background-color: #25D366;
+}
+#contact .container button i {
+  margin-right: 5px;
+  color: white;
+}
+#contact .container form.contact__form {
+  width: 80%;
+  margin-top: 16px;
+}
+#contact .container form.contact__form h4 {
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+#contact .container form.contact__form p {
+  margin-bottom: 16px;
+}
+#contact .container form.contact__form p input, #contact .container form.contact__form p textarea {
+  height: 35px;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid green;
+}
+#contact .container form.contact__form p textarea {
+  min-height: 70px;
+}
+#contact .container form.contact__form p .form_btn {
+  margin: 16px auto;
+  width: 100px;
+  height: 40px;
+}
 
+@media only screen and (min-width: 500px) {
+  form.contact__form {
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #contact .container {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  #contact .container form.contact__form {
+    max-width: 40%;
+  }
+}
 #location {
-  background-color: pink;
-  height: 120px;
+  background-color: #f3f2f2;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+#location h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+#location .map iframe {
+  width: 100%;
 }
 
 #ourCustomers {
+  padding-top: 80px;
   padding-bottom: 60px;
+}
+#ourCustomers h3 {
+  margin-bottom: 20px;
 }
 #ourCustomers .carousel {
   position: relative;
-  width: 100%;
-  overflow: hidden;
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
 }
 #ourCustomers .carousel .btnArrow {
   position: absolute;
@@ -163,9 +279,8 @@
   height: 55px;
   border: 0;
   font-size: 2rem;
-  cursor: pointer;
   color: rgba(102, 133, 92, 0.653);
-  background: transparent;
+  cursor: pointer;
 }
 #ourCustomers .carousel .prev {
   left: -15px;
@@ -178,35 +293,60 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin: 0 20px;
 }
 #ourCustomers .carousel .car__container .list-container {
   position: relative;
-  top: 0px;
+  top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
   transition: 0.5s ease-in-out;
+  display: flex;
 }
 #ourCustomers .carousel .car__container .list-container .list {
-  width: 85vw;
-  float: left;
   display: flex;
   flex-direction: column;
-  padding: 0 13px;
   justify-content: center;
+  text-align: center;
   font-weight: 500;
   line-height: 1.8;
-  text-align: center;
+  width: 77vw;
+  padding: 0 20px;
 }
 #ourCustomers .carousel .car__container .list-container .list p i {
   font-size: 2rem;
   display: block;
   margin-bottom: 15px;
+  text-align: start;
 }
 #ourCustomers .carousel .car__container .list-container .list p span {
   display: block;
 }
 
+@media screen and (min-width: 400px) {
+  #ourCustomers .carousel .btnArrow {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(128, 123, 123, 0.858);
+  }
+  #ourCustomers .carousel .prev {
+    left: 0;
+  }
+  #ourCustomers .carousel .next {
+    right: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #ourCustomers {
+    padding-bottom: 100px;
+  }
+  #ourCustomers h3 {
+    margin-bottom: 70px;
+  }
+  #ourCustomers .carousel .car__container .list-container .list {
+    width: 40vw;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -225,46 +365,42 @@ body {
 }
 
 .sec {
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 50px;
+  padding: 35px 20px;
   line-height: 1.6;
 }
-
-h3 {
-  margin-bottom: 15px;
+.sec h3 {
+  text-align: center;
+  margin-bottom: 45px;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 30px;
-  background-color: white;
+  padding: 30px 20px;
+  background-color: rgba(122, 216, 141, 0.968);
 }
-footer .logo {
-  width: 80%;
-  background-color: #3f0f3f;
+footer .container .logo {
+  min-width: 280px;
+  max-width: 50%;
+  margin: 20px auto;
 }
-footer .logo img {
+footer .container .logo img {
   width: 100%;
 }
-footer .contact {
-  background-color: violet;
+footer .container .contact {
   text-align: center;
-  margin: 15px 0;
   padding: 17px 0;
 }
-footer .contact i {
+footer .container .contact i {
   font-size: 2.3rem;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   margin-right: 10px;
 }
-footer .contact p {
-  margin-top: 8px;
+footer .container .contact p {
+  margin-bottom: 20px;
 }
 footer > span {
-  font-size: 1rem;
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 section.banner {
@@ -288,6 +424,45 @@ section.banner h2 {
 section.banner i {
   font-size: 2rem;
   animation: floating 1s alternate infinite;
+}
+
+@media only screen and (min-width: 400px) {
+  .sec {
+    padding: 40px 0;
+  }
+
+  div.container {
+    background-color: #e4b5d5;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  footer span {
+    margin: 0 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  footer span {
+    margin: 0 80px;
+    text-align: start;
+  }
+  footer .container {
+    display: flex;
+  }
+  footer .container .logo {
+    height: 200px;
+    margin: auto 0;
+    max-width: 40%;
+  }
+  footer .container .contact {
+    width: 60%;
+    height: 400px;
+    text-align: start;
+    padding-left: 130px;
+  }
+  footer .container .contact i:nth-child(2) {
+    margin-left: 130px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
